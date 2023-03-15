@@ -3,7 +3,7 @@ job("Node JS and Docker Job with DSL"){
     description("This app was coded in nodeJS and buildede in Jenkins with DSL")
 
     scm{
-        git("https://github.com/macloujulian/nodejsapp.git", "master"){ node ->
+        git("https://github.com/boxoky/NODEJS---FIRST-DSL-PROYECT.git", "master"){ node ->
             node / gitConfigName("Marco Antonio AG")
             node / gitConfigEmail("marcontonio.98@hotmail.com")
         }
