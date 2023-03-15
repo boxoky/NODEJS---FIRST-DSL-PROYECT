@@ -22,7 +22,14 @@ job("Node JS Job with DSL"){
     
     steps{
 
-        shell("npm install")
+        dockerBuildAndPublish{
+            repositoryName("boxoky/nodejsapp")
+            tag("${GIT_REVISION,length=7}")
+            registryCredentials("docker-hub")
+            forcePull(false)
+            createFingerprints(false)
+            skipDecorate()
+        }
     }
 
     publishers{
