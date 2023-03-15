@@ -1,4 +1,4 @@
-job("Node JS Job with DSL"){
+job("Node JS and Docker Job with DSL"){
 
     description("This app was coded in nodeJS and buildede in Jenkins with DSL")
 
